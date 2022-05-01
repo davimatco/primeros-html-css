@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">    <!-- se agregan la tipografia de la pagina web  -->   
+    <title>Document</title>
+    <style>
+         :root{ /*se agregan los diseños variables de la pagina */
+            --white: #FFFF;
+            --black:
+            --very--light-pink: #C7C7C7;
+            --text--input-field: #F7F7F7;
+            --sm: 20px; 
+            --md: 16px
+        }
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .menu{
+            width: 100px;
+            height: auto;
+            border: 1px solid ;
+            border-radius: 6px;
+            padding: 20px 20px 0 20px;
+        }
+        .menu ul {
+            list-style: none; /*se quitan los puntos que estan por defecto*/
+            padding: 0;
+            margin: 0;
+        }
+        .menu ul li {
+            text-align: center;
+        }
+        .menu ul li:last-child {
+            padding-top: 20px;
+            border: 1px solid ;
+        }
+        .menu ul li:last-child a {
+            color: aquamarine;
+            font-size: var(--md);
+        }
+        .menu ul li a {
+            color: black;
+            font-size: var(--md);
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: inline-block;
+        } 
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="/" class="title" >my orders</a>
+            </li>
+            <li>
+                <a href="/">my accounts</a>
+            </li>
+            <li>
+                <a href="/">sing out</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

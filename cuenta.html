@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">    <!-- se agregan la tipografia de la pagina web  -->   
+    <title>Document</title>
+    <style>
+        :root{ /*se agregan los diseños variables de la pagina */
+            --white: #FFFF;
+            --black:
+            --very--light-pink: #C7C7C7;
+            --text--input-field: #F7F7F7;
+            --sm: 20px;
+            --md: 16px
+        }
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .login{
+            width: 100%;/**/
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .form-container{
+            display: grid;
+            grid-template-rows: auto 1fr auto; /*tomo el tamaño que desee*/
+            width: 300px;       
+        }
+        .logo{
+            width: 150px;
+            margin-bottom: 40px;   /*margen del logo*/
+            justify-self: center;  /*centrar el logo*/
+            display:none;
+        }
+        .title{
+            font-size: var(--sm);
+            margin-bottom: 37px;
+            text-align: start;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .form div{
+            display: flex;
+            flex-direction: column;
+        }
+        .label{
+            font-size: (--md); /*tamaño de la letra*/
+            font-weight: bold; /*grosor de la letra*/
+            margin-bottom: 4px;
+        }
+        .input{
+            background-color: #C7C7C7;
+            border-radius: 8px;
+            border: none;
+            height: 20px;
+            font-size: va(--md);
+            padding: 6px; /*no quede tan pegado*/
+            margin-bottom: 15px;
+        }
+        .input-name
+        .input-email
+        .input-password{
+           margin-bottom: 50px;
+        }
+        .primary-button{
+            background-color: aquamarine;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+
+        }
+        @media(max-width: 900px){
+            .form-container{
+                height: 100%;
+            }
+            .form{
+                height: 100%;
+                justify-content: space-between; /*separar el boton de los cuandros */
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+            <h1 class="title">MY account 😊</h1>
+        
+            <form action="/" class="form">
+                <div >
+                    <label for="name" class="label">name</label>
+                    <input type="text" id="name" placeholder="david" class="input input-name">
+    
+                    <label for="email" class="label">email</label>
+                    <input type="text" id="email" placeholder="holacomoestas@gmail" class="input input-email">
+
+                    <label for="new password" class="label">password</label>
+                <input type="password" id="password" placeholder="*******" class="input input-password">
+                </div>
+                
+            </form>
+            <form action="/" class="form">
+                <input type="submit" value="create" class="primary-button">
+            </form>
+            
+           
+        </div>
+    </div>
+</body>
+</html>

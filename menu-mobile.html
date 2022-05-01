@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">    <!-- se agregan la tipografia de la pagina web  -->   
+    <title>Document</title>
+    <style>
+         :root{ /*se agregan los diseños variables de la pagina */
+            --white: #FFFF;
+            --black:
+            --very--light-pink: #C7C7C7;
+            --text--input-field: #F7F7F7;
+            --sm: 20px; 
+            --md: 16px
+        }
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .mobile{
+            padding: 24px;  /*tenga un espacio hacia los lados */
+            
+        }
+        .mobile a{
+           text-decoration: none;  
+           color: black;
+           font-weight: bold; /*mas gruesa la letra */
+           margin-bottom: 24px;
+        }
+        .mobile ul {
+           padding: 0;
+           margin: 24px 0 0;
+           list-style: none;  /*se quira puntos del lado*/
+        }
+        .mobile ul:nth-child(1) {
+           border-bottom: 1px solid rgb(192, 192, 192);
+        }
+        .mobile-menu ul:nth-child(3) {
+           margin-top: 100px;
+}
+        .mobile ul li {
+           margin-bottom: 24px;
+        }
+        .email{
+          font-size: 12px; 
+          font-weight: 300 !important;  /*por temas de especificidad se pone el important */       
+        }
+        .singout {
+            color: aquamarine !important;
+            font-size: var(--md);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="mobile">
+       <ul>
+         <li>
+             <a href="/">CATEGORIES</a>
+         </li>
+         <li>
+            <a href="/">ALL</a>
+        </li>
+        <li>
+            <a href="/">CLOTHES</a>
+        </li>
+        <li>
+            <a href="/">ELECTRONICS</a>
+        </li>
+        <li>
+            <a href="/">FURNITURES</a>
+        </li>
+       </ul>
+
+       <ul>
+        <li>
+            <a href="/">My orders</a>
+        </li>
+        <li>
+            <a href="/">My account</a>
+        </li>
+       </ul>
+
+       <ul>
+        <li>
+            <a href="/" class="email">hola@gmail.com</a>
+        </li>
+        <li>
+            <a href="/" class="singout">sing out</a>
+        </li>
+       </ul>
+    </div>
+</body>
+</html>
